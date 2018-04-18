@@ -1,6 +1,6 @@
 <template>
   <div id='page-not-found'>
-    <h1>404 - Halaman tidak ditemukan</h1>
+    <h1>404 - pagina no encontrada</h1>
     <router-link :to="'/'" class="btn btn-primary">
       back to Homepage
     </router-link>

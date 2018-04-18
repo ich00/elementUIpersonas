@@ -1,12 +1,17 @@
 import axios from 'axios'
 
+console.log('entra')
+
 const api = axios.create({
-  baseURL: 'http://localhost:3000/'
+  baseURL: 'https://jsonplaceholder.typicode.com/'
 })
 
+console.log(api)
+
 function getBlogsApi (cb) {
-  api.get('blogs')
+  api.get('/posts')
   .then((response) => {
+    console.log(response.data)
     cb(response.data)
   })
   .catch((error) => {
